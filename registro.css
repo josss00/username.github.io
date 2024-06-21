@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f7fc; /* Azul claro para el fondo */
+    color: #333; /* Color de texto principal */
+}
+
+header {
+    background-color: #1565c0; /* Azul oscuro para el encabezado */
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Añadido para posicionar la imagen de encabezado */
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Para colocar la imagen detrás del contenido */
+}
+
+nav {
+    flex: 1; /* Para que el menú ocupe el espacio restante */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Eliminar margen izquierdo al primer elemento */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0d47a1; /* Azul más oscuro al pasar el ratón */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #1565c0; /* Azul oscuro para el título principal */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff; /* Fondo blanco para el contenedor principal */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registration {
+    padding: 2rem;
+}
+
+#registration h2 {
+    color: #1565c0; /* Azul oscuro para el título del formulario */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    color: #1565c0; /* Azul oscuro para las etiquetas */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #1565c0; /* Borde azul oscuro para los campos de entrada */
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #1565c0; /* Azul oscuro para el botón */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0d47a1; /* Azul más oscuro al pasar el ratón */
+}
+
+footer {
+    background-color: #1565c0; /* Azul oscuro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

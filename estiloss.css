@@ -1,0 +1,116 @@
+/* Fondo del cuerpo de la página */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    background-image: url('fondo-contenedor.jpg'); /* Imagen de fondo para el contenedor */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: rgba(62, 39, 35, 0.9);
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+}
+
+header nav {
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .header-image {
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+    transition: transform 0.3s ease; /* Animación de transformación */
+    z-index: -1;
+}
+
+/* Clase para agrandar la imagen */
+header.shrink .header-image {
+    transform: scale(0.8); /* Reducir el tamaño al 80% */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: rgba(62, 39, 35, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.menu-section {
+    padding: 20px;
+}
+
+.menu-section h2 {
+    font-family: monospace;
+    color: #3e2723;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.item-details {
+    font-family: monospace;
+}
+
+.item-details h3 {
+    margin: 0;
+    color: #3e2723;
+}
+
+.item-details p {
+    margin: 5px 0;
+}

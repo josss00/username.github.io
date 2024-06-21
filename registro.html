@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes - CAFETERÍA LUX</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicioLux.html">Inicio</a></li>
+                <li><a href="cartilla.html">Cartilla</a></li>
+                <li><a href="registro.html">Registro de Clientes</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </nav>
+        <img src="fondoinicio.jpg" alt="Imagen de encabezado" class="header-image">
+        <h1>CAFETERÍA LUX</h1>
+    </header>
+    <div class="container main-content">
+        <section id="registration">
+            <h2>Registro de Clientes</h2>
+            <form id="registration-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <input type="submit" value="Registrarse">
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 CAFETERÍA LUX. ¡Bienvenido!
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

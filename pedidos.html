@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Cafés - Cafetería Lux</title>
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicioLux.html">Inicio</a></li>
+                <li><a href="cartilla.html">Cartilla</a></li>
+                <li><a href="registro.html">Registro de Clientes</a></li>
+                <li><a href="promociones.html">Pedidos</a></li>
+            </ul>
+        </nav>
+        <img src="fondoinicio.jpg" alt="Imagen de encabezado" class="header-image">
+        <h1>CAFETERÍA LUX</h1>
+    </header>
+    <div class="container main-content">
+        <section id="menu">
+            <h2>Nuestro Menú de Cafés</h2>
+            <div id="lista-cafes" class="menu-items">
+                <!-- Aquí se cargarán dinámicamente los productos desde la base de datos -->
+            </div>
+        </section>
+        <section id="pedido">
+            <h2>Tu Pedido</h2>
+            <ul id="carrito">
+                <!-- Aquí se mostrarán los productos seleccionados -->
+            </ul>
+            <div id="total">
+                <strong>Total:</strong> <span id="total-pedido">$0.00</span>
+            </div>
+            <button id="btn-realizar-pedido">Realizar Pedido</button>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 CAFETERÍA LUX. ¡Bienvenido!
+    </footer>
+    <script src="pedidos.js"></script>
+</body>
+</html>
